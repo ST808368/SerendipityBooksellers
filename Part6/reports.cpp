@@ -5,17 +5,19 @@ int main()
 {
     bool cont = true;
     while (cont){
-        cout << "Serendipity Booksellers\n\tMain Menu\n" << endl;
-        cout << "1. Cashier Module" << endl;
-        cout << "2. Inventory Database Module" << endl;
-        cout << "3. Report Module" << endl;
-        cout << "4. Exit\n" << endl;
-        cout << "Enter Your Choice: ";
-        
-        int mainChoice;
-        cin >> mainChoice;
-        
-        switch(mainChoice){
+    	cout << "Serendipity Booksellers" << endl;
+    	cout << "   Inventory Database" << endl << endl;
+    	cout << "1. Look Up a Book" << endl;
+    	cout << "2. Add a Book" << endl;
+    	cout << "3. Edit a Book's Record" << endl;
+    	cout << "4. Delete a Book" << endl;
+    	cout << "5. Return to the Main Menu" << endl << endl;
+    	cout << "Enter Your Choice: ";
+    	
+    	int inventoryChoice;
+    	cin >> inventoryChoice;
+    	
+        switch(inventoryChoice){
             case 1:
                 cout << "\nYou selected item 1." << endl << endl;
                 break;
@@ -27,16 +29,13 @@ int main()
                 break;
             case 4:
                 cout << "\nYou selected item 4." << endl << endl;
-                cont = false;
                 break;
             case 5:
                 cout << "\nYou selected item 5." << endl << endl;
-                break;
-            case 6:
-                cout << "\nYou selected item 6." << endl << endl;
+                cont = false;
                 break;
             default:
-                cout << "\nPlease enter a number in the range 1 - 4." << endl << endl;
+                cout << "\nPlease enter a number in the range 1 - 5." << endl << endl;
         }
     }
 	return 0;
