@@ -1,4 +1,8 @@
 #include <iostream>
+#include "cashier.h"
+#include "invmenu.h"
+#include "reports.h"
+#include "bookinfo.h"
 using namespace std;
 
 int main()
@@ -17,13 +21,13 @@ int main()
         
         switch(mainChoice){
             case 1:
-                cout << "\nYou selected item 1." << endl << endl;
+                cashier();
                 break;
             case 2:
-                cout << "\nYou selected item 2." << endl << endl;
+                invMenu();
                 break;
             case 3:
-                cout << "\nYou selected item 3." << endl << endl;
+                reports();
                 break;
             case 4:
                 cout << "\nYou selected item 4." << endl << endl;

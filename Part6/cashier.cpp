@@ -1,7 +1,8 @@
 #include <iostream>
+#include "cashier.h"
 using namespace std;
 
-int main()
+int cashier()
 {
     bool valid = true;
     while (valid){

@@ -1,7 +1,8 @@
 #include <iostream>
+#include "invmenu.h"
 using namespace std;
 
-int main()
+int invMenu()
 {
     bool cont = true;
     while (cont){
@@ -19,16 +20,16 @@ int main()
     	
         switch(inventoryChoice){
             case 1:
-                cout << "\nYou selected item 1." << endl << endl;
+                lookUpBook();
                 break;
             case 2:
-                cout << "\nYou selected item 2." << endl << endl;
+                addBook();
                 break;
             case 3:
-                cout << "\nYou selected item 3." << endl << endl;
+                editBook();
                 break;
             case 4:
-                cout << "\nYou selected item 4." << endl << endl;
+                deleteBook();
                 break;
             case 5:
                 cout << "\nYou selected item 5." << endl << endl;
@@ -39,4 +40,20 @@ int main()
         }
     }
 	return 0;
+}
+
+void lookUpBook(){
+    cout << "You selected Look Up Book. " << endl;
+}
+
+void addBook(){
+    cout << "You selected Add Book. " << endl;
+}
+
+void editBook(){
+    cout << "You selected Edit Book. " << endl;
+}
+
+void deleteBook(){
+    cout << "You selected Delete Book. " << endl;
 }
