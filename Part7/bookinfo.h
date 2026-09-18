@@ -1,6 +1,6 @@
 #ifndef BOOKINFO_H
 #define BOOKINFO_H
 
-int bookInfo();
+void bookInfo(isbn, title, author, publisher, date, qty, wholesale, retail);
 
 #endif
