@@ -2,7 +2,7 @@
 #include "bookinfo.h"
 using namespace std;
 
-int bookInfo(string isbn, string title, string author, string publisher, string date, int qty, double wholesale, double retail)
+void bookInfo(string isbn, string title, string author, string publisher, string date, int qty, double wholesale, double retail)
 {
     cout << "Serendipity Booksellers" << endl;
     cout << "    Book Information" << endl << endl;
@@ -14,5 +14,4 @@ int bookInfo(string isbn, string title, string author, string publisher, string 
     cout << "Quanitity-On-Hand: " << qty << endl;
     cout << "Wholesale Cost: " << wholesale << endl;
     cout << "Retail Price: " << retail << endl;
-    return 0;
 }

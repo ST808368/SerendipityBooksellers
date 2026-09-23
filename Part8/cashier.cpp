@@ -2,7 +2,7 @@
 #include "cashier.h"
 using namespace std;
 
-int cashier()
+void cashier()
 {
     bool valid = true;
     while (valid){
@@ -51,5 +51,4 @@ int cashier()
     	    valid = false;
     	}
     }
-	return 0;
 }
