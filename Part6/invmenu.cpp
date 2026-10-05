@@ -2,7 +2,7 @@
 #include "invmenu.h"
 using namespace std;
 
-int invMenu()
+void invMenu()
 {
     bool cont = true;
     while (cont){
@@ -32,14 +32,12 @@ int invMenu()
                 deleteBook();
                 break;
             case 5:
-                cout << "\nYou selected item 5." << endl << endl;
                 cont = false;
                 break;
             default:
                 cout << "\nPlease enter a number in the range 1 - 5." << endl << endl;
         }
     }
-	return 0;
 }
 
 void lookUpBook(){

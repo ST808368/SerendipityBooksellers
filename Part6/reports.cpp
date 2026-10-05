@@ -5,7 +5,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-int reports()
+void reports()
 {
     bool cont = true;
     while (cont){
@@ -44,11 +44,12 @@ int reports()
                 break;
             case 7:
                 cout << "You selected item 7. " << endl;
+                cont = false;
+                break;
             default:
                 cout << "\nPlease enter a number in the range 1 - 7." << endl << endl;
         }
     }
-    return 0;
 }
 
 void repListing(){

@@ -1,7 +1,7 @@
 #ifndef REPORTS_H
 #define REPORTS_H
 
-int reports();
+void reports();
 void repListing();
 void repWholesale();
 void repRetail();
