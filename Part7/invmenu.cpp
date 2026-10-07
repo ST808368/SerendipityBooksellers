@@ -45,7 +45,7 @@ int invMenu()
                 deleteBook();
                 break;
             case 5:
-                cout << "\nYou selected item 5." << endl << endl;
+                cout << "\nYou selected Return to the Main Menu. \n" << endl << endl;
                 cont = false;
                 break;
             default:
@@ -56,17 +56,17 @@ int invMenu()
 }
 
 void lookUpBook(){
-    cout << "You selected Look Up Book. " << endl;
+    cout << "You selected Look Up Book. \n" << endl;
 }
 
 void addBook(){
-    cout << "You selected Add Book. " << endl;
+    cout << "You selected Add Book. \n" << endl;
 }
 
 void editBook(){
-    cout << "You selected Edit Book. " << endl;
+    cout << "You selected Edit Book. \n" << endl;
 }
 
 void deleteBook(){
-    cout << "You selected Delete Book. " << endl;
+    cout << "You selected Delete Book. \n" << endl;
 }

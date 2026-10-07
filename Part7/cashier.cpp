@@ -1,11 +1,14 @@
 #include <iostream>
 #include "cashier.h"
+#include <iomanip>
+#include <string>
 using namespace std;
 
-int cashier()
+void cashier()
 {
     bool valid = true;
     while (valid){
+        cout << fixed << setprecision(2) << setw(6);
         string date, isbn, title;
         int quantity;
         float price;
@@ -22,8 +25,7 @@ int cashier()
         cin >> isbn;
         cin.ignore();
         cout << "Title: ";
-        cin >> title;
-        cin.ignore();
+        getline(cin, title);
         cout << "Price: ";
         cin >> price;
         cin.ignore();
@@ -33,7 +35,7 @@ int cashier()
         double total = tax + subtotal;
         
     	cout << "Serendipity Book Sellers\n" << endl;
-    	cout << "Date: " << endl << endl;
+    	cout << "Date: " << date << endl << endl;
     	cout << "Qty\tISBN\t\tTitle\t\t\tPrice\tTotal" << endl;
     	cout << "______________________________________________________________" << endl;
     	cout << quantity << "\t" << isbn << "\t\t" << title << "\t\t\t" << "$ " << price << "\t" << "$ " << subtotal << endl << endl;
@@ -51,5 +53,4 @@ int cashier()
     	    valid = false;
     	}
     }
-	return 0;
 }

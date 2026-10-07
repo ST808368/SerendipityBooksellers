@@ -1,6 +1,8 @@
 #ifndef BOOKINFO_H
 #define BOOKINFO_H
+#include <string>
+using namespace std;
 
-int bookInfo();
+void bookInfo(string, string, string, string, string, int, double, double);
 
 #endif

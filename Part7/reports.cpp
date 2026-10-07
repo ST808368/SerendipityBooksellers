@@ -5,7 +5,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-int reports()
+void reports()
 {
     bool cont = true;
     while (cont){
@@ -18,7 +18,7 @@ int reports()
         cout << "5. Listing by Cost" << endl;
         cout << "6. Listing by Age" << endl;
         cout << "7. Return to Main Menu" << endl << endl;
-        cout << "Enter Your Choice: " << endl;
+        cout << "Enter Your Choice: ";
         
         int reportsChoice;
         cin >> reportsChoice;
@@ -35,6 +35,7 @@ int reports()
                 break;
             case 4:
                 repQty();
+                break;
             case 5:
                 repCost();
                 break;
@@ -43,34 +44,35 @@ int reports()
                 cont = false;
                 break;
             case 7:
-                cout << "You selected item 7. " << endl;
+                cout << "You selected Return to the Main Menu. " << endl;
+                cont = false;
+                break;
             default:
                 cout << "\nPlease enter a number in the range 1 - 7." << endl << endl;
         }
     }
-    return 0;
 }
 
 void repListing(){
-    cout << "You selected Inventory Listing. " << endl;
+    cout << "You selected Inventory Listing. \n" << endl;
 }
 
 void repWholesale(){
-    cout << "You selected Inventry Wholesale Value. " << endl;
+    cout << "You selected Inventory Wholesale Value. \n" << endl;
 }
 
 void repRetail(){
-    cout << "You selected Inventory Retail Value. " << endl;
+    cout << "You selected Inventory Retail Value. \n" << endl;
 }
 
 void repQty(){
-    cout << "You selected Listing By Quantity. " << endl;
+    cout << "You selected Listing By Quantity. \n" << endl;
 }
 
 void repCost(){
-    cout << "You selected Listing By Cost. " << endl;
+    cout << "You selected Listing By Cost. \n" << endl;
 }
 
 void repAge(){
-    cout << "You selected Listing By Age. " << endl;
+    cout << "You selected Listing By Age. \n" << endl;
 }

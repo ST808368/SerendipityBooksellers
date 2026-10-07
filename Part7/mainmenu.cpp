@@ -6,6 +6,7 @@ using namespace std;
 #include "invmenu.h"
 #include "reports.h"
 #include "bookinfo.h"
+#include <iomanip>
 
 // constant for array sizes
 const int SIZE = 20;
@@ -24,6 +25,7 @@ int main()
 {
     bool cont = true;
     while (cont){
+        cout << fixed << setprecision(2) << setw(6);
         cout << "Serendipity Booksellers\n\tMain Menu\n" << endl;
         cout << "1. Cashier Module" << endl;
         cout << "2. Inventory Database Module" << endl;
@@ -45,14 +47,8 @@ int main()
                 reports();
                 break;
             case 4:
-                cout << "\nYou selected item 4." << endl << endl;
+                cout << "\nYou selected to Exit." << endl << endl;
                 cont = false;
-                break;
-            case 5:
-                cout << "\nYou selected item 5." << endl << endl;
-                break;
-            case 6:
-                cout << "\nYou selected item 6." << endl << endl;
                 break;
             default:
                 cout << "\nPlease enter a number in the range 1 - 4." << endl << endl;
