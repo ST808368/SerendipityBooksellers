@@ -1,6 +1,7 @@
 #include <iostream>
 #include "cashier.h"
 #include <iomanip>
+#include <string>
 using namespace std;
 
 void cashier()
@@ -25,7 +26,6 @@ void cashier()
         cin.ignore();
         cout << "Title: ";
         getline(cin, title);
-        cin.ignore();
         cout << "Price: ";
         cin >> price;
         cin.ignore();

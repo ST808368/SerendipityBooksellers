@@ -33,6 +33,7 @@ void invMenu()
                 break;
             case 5:
                 cont = false;
+                cout << "You selected Return to the Main Menu.\n" << endl;
                 break;
             default:
                 cout << "\nPlease enter a number in the range 1 - 5." << endl << endl;
@@ -41,17 +42,17 @@ void invMenu()
 }
 
 void lookUpBook(){
-    cout << "You selected Look Up Book. " << endl;
+    cout << "You selected Look Up Book. \n" << endl;
 }
 
 void addBook(){
-    cout << "You selected Add Book. " << endl;
+    cout << "You selected Add Book. \n" << endl;
 }
 
 void editBook(){
-    cout << "You selected Edit Book. " << endl;
+    cout << "You selected Edit Book. \n" << endl;
 }
 
 void deleteBook(){
-    cout << "You selected Delete Book. " << endl;
+    cout << "You selected Delete Book. \n" << endl;
 }

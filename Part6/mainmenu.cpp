@@ -30,15 +30,8 @@ int main()
                 reports();
                 break;
             case 4:
-                cout << "\nYou selected item 4." << endl << endl;
+                cout << "\nYou selected to Exit." << endl << endl;
                 cont = false;
-                break;
-            case 5:
-                cout << "\nYou selected item 5." << endl << endl;
-                break;
-            case 6:
-                cout << "\nYou selected item 6." << endl << endl;
-                break;
             default:
                 cout << "\nPlease enter a number in the range 1 - 4." << endl << endl;
         }

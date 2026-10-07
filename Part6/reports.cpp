@@ -18,7 +18,7 @@ void reports()
         cout << "5. Listing by Cost" << endl;
         cout << "6. Listing by Age" << endl;
         cout << "7. Return to Main Menu" << endl << endl;
-        cout << "Enter Your Choice: " << endl;
+        cout << "Enter Your Choice: ";
         
         int reportsChoice;
         cin >> reportsChoice;
@@ -35,15 +35,15 @@ void reports()
                 break;
             case 4:
                 repQty();
+                break;
             case 5:
                 repCost();
                 break;
             case 6:
                 repAge();
-                cont = false;
                 break;
             case 7:
-                cout << "You selected item 7. " << endl;
+                cout << "You selected Return to Main Menu. \n " << endl;
                 cont = false;
                 break;
             default:
@@ -53,25 +53,25 @@ void reports()
 }
 
 void repListing(){
-    cout << "You selected Inventory Listing. " << endl;
+    cout << "You selected Inventory Listing. \n" << endl;
 }
 
 void repWholesale(){
-    cout << "You selected Inventry Wholesale Value. " << endl;
+    cout << "You selected Inventory Wholesale Value. \n" << endl;
 }
 
 void repRetail(){
-    cout << "You selected Inventory Retail Value. " << endl;
+    cout << "You selected Inventory Retail Value. \n" << endl;
 }
 
 void repQty(){
-    cout << "You selected Listing By Quantity. " << endl;
+    cout << "You selected Listing By Quantity. \n" << endl;
 }
 
 void repCost(){
-    cout << "You selected Listing By Cost. " << endl;
+    cout << "You selected Listing By Cost. \n" << endl;
 }
 
 void repAge(){
-    cout << "You selected Listing By Age. " << endl;
+    cout << "You selected Listing By Age. \n" << endl;
 }
